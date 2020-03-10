@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Ranking Page</title>
+</head>
+
+<body>
+
+    
+    <center>
+        <h1>Please rank your articles</h1>
+        <a href="index.html"><button type="button" class="btn btn-danger" id="randomarticle1Btn">Home Page</button></a>
+        <br>
+        <br>
+    <form id="postRanking">
+
+        <input type="number" placeholder="Highest Rank Article" id="first" min="1" max="3">
+
+        <input type="number" placeholder="Second Rank Article" id="second" min="1" max="3">
+
+        <input type="number" placeholder="Lowest Rank Article" id="thrid" min="1" max="3">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+        <h1 id="rank1"></h1>
+        <h1 id="rank2"></h1>
+        <h1 id="rank3"></h1>
+    </center>
+
+
+</body>
+<script src="rankScript.js"></script>
+
+</html>
