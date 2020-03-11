@@ -54,6 +54,17 @@ function generateArticle(url) {
         ${articleContent}
         `;
 
+    })
+    .catch(function(error) {
+   
+        console.log(error);
+        document.getElementsByTagName("section")[0].innerHTML = `
+        <h1>Uh Oh looks like you have an error</h1>
+        <h1>${error}</h1>
+        <h1>:(</h1>
+        `;
+        
+
     });
 }
 

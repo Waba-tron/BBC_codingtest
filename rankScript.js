@@ -1,5 +1,3 @@
-
-
 function makePosts(e){
 
     //User inputs
@@ -20,6 +18,7 @@ function makePosts(e){
         rank2.textContent = ``;
         rank3.textContent = ``;
     }
+
     else{
 
         //makes post request to the url or api even
@@ -51,6 +50,12 @@ function makePosts(e){
             rank3.textContent = `You have chosen article ${data.lowestRank} have the lowest ranking`;
 
         })
+        .catch(function(error) {
+            //If something goes wrong display an error message to the user
+            rank1.textContent = `Uh oh looks like you have an error`;
+            rank2.textContent = `${error}`;
+            rank3.textContent = `:(`;
+        });
 
     }
 }
